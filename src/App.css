@@ -12,12 +12,14 @@
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
-  background-image: url('./Images/background-1.jpg');
+  background-image: url('./Images/background-1.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.2);
   row-gap: 2rem;
+
 }
+
+
 
 navbar{
   flex-basis: 100%;
@@ -72,6 +74,10 @@ navbar{
   align-items: center;
 }
 
+#page-1-left-mid a{
+  color: #0A0F15;
+}
+
 #book-cta{
   padding: 1rem 2rem;
   background-color: #F8B41F;
@@ -89,6 +95,7 @@ navbar{
   flex-basis: 100%;
   display: flex;
   gap: 2rem;
+  justify-content: space-between;
 }
 
 .doctor-card{
@@ -97,17 +104,19 @@ navbar{
   background-color: #FFE5D0;
   padding: 1rem;
   border-radius: 10%;
+  justify-content: space-between;
 }
 
 .doctor-left{
-  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-.doctor-right{
-  flex-basis: 30%;
+.doctor-link{
+  display: block;
+  align-self: flex-end;
 }
-
-
 
 .doc-icon{
   width: 8rem;
